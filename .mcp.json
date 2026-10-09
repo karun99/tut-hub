@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "tut-hub": {
+      "command": "node",
+      "args": [
+        "mcp-server/server.mjs"
+      ]
+    }
+  }
+}
