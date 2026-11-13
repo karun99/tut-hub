@@ -34,7 +34,7 @@ export async function generateQuiz(topic, gradeLevel, model, apiKey, customPromp
     const jsonMatch = content.match(/\[\s*{[\s\S]*}\s*\]/);
     const jsonString = jsonMatch ? jsonMatch[0] : content;
     return JSON.parse(jsonString);
-  } catch (e) {
+  } catch {
     console.error('Failed to parse AI response as JSON:', content);
     throw new Error('The AI generated an invalid response format. Please try again.');
   }
